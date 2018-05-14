@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="newsList"
+            type="com.example.webwerks.mvvmlistview.ViewModel.NewsModel"/>
+
+    </data>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:text="@{newsList.header}"
+        android:id="@+id/txt1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{newsList.desc}"
+        android:id="@+id/txt2"/>
+
+
+</LinearLayout>
+</layout>
